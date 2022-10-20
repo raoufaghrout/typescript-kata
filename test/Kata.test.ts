@@ -1,10 +1,14 @@
-import Kata from "../src/Kata";
+import { Kata, doSomething } from "../src/Kata";
 
 describe("Kata Test", () => {
 
-    it("should do something", () => {
+    it("should do something in a class", () => {
         const kata = new Kata()
 
-       expect(kata.something()).toBe(false);
+        expect(kata.something()).toBe(true);
+    });
+
+    it("should do something in a function", () => {
+        expect(doSomething()).toBe(true)
     });
 });

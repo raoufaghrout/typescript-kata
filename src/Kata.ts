@@ -1,6 +1,12 @@
-export default class Kata {
+class Kata {
 
-    public something() {
+    public something(): Boolean {
         return true;
     }
 }
+
+const doSomething = (): Boolean => {
+    return true;
+}
+
+export { Kata, doSomething }
